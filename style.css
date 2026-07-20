@@ -1023,3 +1023,68 @@ body {
     color: white;
     z-index: 10000000000000000;
 }
+
+.password-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(254, 236, 234, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999999;
+}
+
+.password-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    border: 3px solid #333;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    font-family: "Sriracha", cursive;
+    max-width: 90%;
+    width: 400px;
+}
+
+.password-box h3 {
+    margin-bottom: 20px;
+    color: #FF7882;
+    font-size: 1.4rem;
+}
+
+.password-box input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid #DACCBF;
+    border-radius: 50px;
+    outline: none;
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+.password-box button {
+    background-color: #FF7882;
+    color: white;
+    border: 2px solid #333;
+    padding: 8px 25px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Sriracha", cursive;
+    transition: 0.3s;
+}
+
+.password-box button:hover {
+    background-color: #ff5260;
+    transform: scale(1.05);
+}
+
+/* إخفاء الموقع كلياً قبل إدخال الباسوورد */
+.hidden-site {
+    display: none !important;
+}
